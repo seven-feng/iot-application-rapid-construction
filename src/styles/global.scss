@@ -1,0 +1,43 @@
+.container-toolbar {
+  .toolbar-form {
+    /deep/ .search_items_container {
+      // display: flex;
+      // height: 40px;
+      // align-items: center;
+      .el-form-item  {
+        margin-right: 40px;
+        margin-bottom: 0px;
+        &:nth-last-of-type(-n + 2) {
+          margin-right: 10px;
+        }
+      }
+      .search_btns_container {
+        display: inline-block;
+        line-height: 33px;
+        .toolbar_button {
+          width: 74px; 
+          height: 32px;
+          font-size: 14px;
+          border-radius: 4px;
+        }
+        .search_btn {
+          font-family: PingFangSC-Regular;
+          font-size: 14px;
+          color: #409EFF;
+          border: 1px solid #009FFF;
+        }
+        .el-button {
+          margin-left: 0;
+        }
+      }
+    }
+    .toolbar_btns_container {
+      margin-top: 22px;
+      height: 32px;
+      .insert_button {
+        min-width: 86px; 
+        height: 32px;
+      }
+    }
+  }
+}

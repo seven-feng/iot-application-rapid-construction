@@ -1,0 +1,85 @@
+.header {
+  position: relative;
+  width: 100%;
+  height: 64px;
+  background-color: rgb(19, 33, 59);
+  color: #FFFFFF;
+  font-size: 24px;
+  line-height: 64px;
+}
+
+.content {
+  position: relative;
+  width: 100%;
+  height: calc(100% - 82px);
+}
+
+.footer {
+  position: relative;
+  width: 100%;
+  height: 18px;
+  text-align: center;
+  background-color: rgb(19, 33, 59);
+  color: #FFFFFF;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.logo {
+  padding-left: 10px;
+}
+
+#menueInfo {
+  position: fixed;
+  width: 400px;
+  height: 200px;
+  right: 38px;
+  top: 89px;
+  color: white;
+  border-radius: 24px;
+  background-color: rgba(25, 27, 32, 0.8);
+}
+
+#menueInfo>div {
+  width: 100%;
+  height: 100%;
+}
+
+#menueInfo>div .menueHeader {
+  font-size: 24px;
+  height: 50px;
+  width: 100%;
+  line-height: 47px;
+  text-align: center;
+}
+
+#menueInfo>div .menueContent>.iconContainer {
+  width: 130px;
+  height: 70px;
+  text-align: center;
+  float: left;
+}
+
+#addLighter {
+  position: absolute;
+  right: 70px;
+  top: 34px;
+}
+
+#addLable {
+  color: white;
+  position: absolute;
+  width: 100px;
+  left: -112px;
+  line-height: 0px;
+}
+
+.Unable{
+  color: tomato;
+}
+.On{
+  color: rgb(73, 143, 97);
+}
+.Off{
+  color: rgb(245, 42, 6);
+}

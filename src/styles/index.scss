@@ -1,0 +1,138 @@
+@import "./variables.scss";
+@import "./mixin.scss";
+@import "./transition.scss";
+@import "./element-ui.scss";
+@import "./sidebar.scss";
+@import "./map-demo.scss";
+body {
+  height: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB,
+    Microsoft YaHei, Arial, sans-serif;
+}
+
+label {
+  color: #4b4b4b;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+#app {
+  height: 100%;
+  min-height: 740px;
+  min-width: 1366px;
+  overflow: auto;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  outline: none;
+  text-decoration: none;
+}
+
+div:focus {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
+
+//main-container全局样式
+.app-main {
+  // min-height: 100%
+  /**
+   * 2018-11-16
+   * change by Gao
+  */
+  position: absolute;
+  width: 100%;
+  top: 50px;
+  bottom: 0;
+  overflow: auto;
+  background-color: #f0f2f5;
+  & .container {
+    height: 100%;
+    padding: 16px;
+    overflow: auto;
+
+    & .container-toolbar {
+      line-height: 32px;
+      margin-bottom: 16px;
+    }
+  }
+  & .map-container {
+    height: 100%;
+  }
+}
+/*自定义滚动条样式*/
+::-webkit-scrollbar {
+  /*滚动条整体样式*/
+  width: 5px; /*高宽分别对应横竖滚动条的尺寸*/
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  /*滚动条里面小方块*/
+  box-shadow: inset 0 0 5px rgba(144, 147, 153, 0.2);
+  background: #909399;
+}
+::-webkit-scrollbar-track {
+  /*滚动条里面轨道*/
+  box-shadow: inset 0 0 5px rgba(144, 147, 153, 0.2);
+  background: #ededed;
+}
+
+// 列表操作按钮(带svg)样式
+// .operation-item {
+//   font-size: 16px;
+//   color: #ffffff;
+//   margin: 0 5px;
+//   border: 1;
+//   span {
+//     display: inline-block;
+//     width: 16px;
+//   }
+//   i {
+//     .svg-icon {
+//       font-size: 14px;
+//       vertical-align: -1px;
+//     }
+//   }
+//   &:focus, &:hover {
+//     color: #ffffff;
+//   }
+// }
