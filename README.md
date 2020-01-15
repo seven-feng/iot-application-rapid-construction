@@ -1,14 +1,17 @@
-# iotp-apprapidconstruction
+物联网应用快速构建——web可视化开发
+
+工作台：通过拖放、配置设备组件，实现设备的快速接入和感知数据的获取。此外，还提供规则算法配置，实现设备间的联动。
 
 
-## 技术栈：
+# 进入项目目录
+cd iot-application-rapid-construction
 
-- vue+vuex+element+vue-router
+# 安装依赖
+npm install
 
-### 运行环境:
-node
 
-### 使用
+# 启动服务
+npm run dev
 
-- npm install
-- npm run dev
+
+浏览器访问 http://localhost:80
